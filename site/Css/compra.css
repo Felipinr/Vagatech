@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Titilium Web', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root{
+    --bg-color:var(--bg-color) #1d2631;
+    --tex-color: #fff;
+    --main-color: #34e7f8;
+    --other-color: #fcfcfc;
+    --h1-font: 4rem;
+    --p-font: 1rem;
+}
+
+
+body{
+    background-color:#1d2631 ;
+    color: var(--tex-color);
+    text-align: ce;
+}
+
+
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 8%;
+
+}
+
+
+.logo{
+    display: flex;
+    align-items: center;
+    color: var(--tex-color);
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.logo i{
+    color: var(--main-color);
+    font-size: 32px;
+    margin-right: 5px;
+}
+
+.navegacao{
+    display: flex;
+}
+
+.navegacao a{
+    color: var(--other-color);
+    font-size: var(--p-font);
+    font-weight: 500;
+    margin: 0 30px;
+    transition: a .55s ease;
+}
+
+.navegacao a:hover{
+    color: var(--main-color);
+
+}
+
+
+.header-icons{
+    display: flex;
+    align-items: center;
+}
+
+#menu{
+    font-size: 35px;
+    color: var(--tex-color);
+    z-index: 10001;
+    cursor: pointer;
+}
+
+.header-icons i{
+    margin-right: 25px;
+    font-size: 28px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.header-icons i:hover{
+    transform: translateY(-5px);
+    color: var(--main-color);
+}
+
+
+.section{
+
+    padding: 0 15%;
+}
+.home{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+.home-text h1{
+    font-size: var(--h1-font);
+    line-height: 1.2;
+    margin-bottom: 2px;
+}
+
+.home-text h5{
+    color: #ffffff99;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.home-text h3{
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 60px;
+    margin-right: 80%;
+}
+
+
+.home-img img{
+    max-width: 75%;
+    width: 28rem;
+    height: auto;
+    margin-left: 45%;
+}
+
+
+@keyframes blink {
+  0% {
+    border-color: red;
+  }
+  25% {
+    border-color: orange;
+  }
+  50% {
+    border-color: yellow;
+  }
+  75% {
+  border-color: #32E70F;
+  }
+  100%{
+  border-color: aqua;
+  }
+}
+.piscante {
+  animation: blink 1s infinite;
+}
+
+.piscante{
+    display: inline-block;
+    padding: 15px 70px;
+    font-size: 16px;
+    font-weight: 500;
+    background: transparent;
+    border: solid 2px var(--tex-color);
+    transition: all.55 ease;
+    color: #fff;
+}
+
+.piscante:hover{
+    background: var(--tex-color);
+    border: 2px solid var(--tex-color);
+    color: #000;
+}
+.piscante {
+    border: 2px solid #000;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #1d2631;
+    color: #fff;
+  }
+
+  .main{
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 80%;
+    margin: 0 auto;
+    
+
+}
+
+.direita{
+text-align: left;
+margin-right: 100px;
+}
+
+footer {
+    height: 50px; /* Defina a altura desejada para o rodapé */ 
+    position: fixed; /* fixa o elemento no rodapé da página */
+    bottom: 0; /* alinha o elemento no fundo da página */
+    width: 100%; /* define a largura do elemento para cobrir toda a largura da página */
+    background-color: #333; /* define a cor de fundo do rodapé */
+    color: #fff; /* define a cor do texto do rodapé */
+    text-align: center; /* alinha o texto ao centro */
+    padding: 20px; /* adiciona um espaçamento interno para o conteúdo do rodapé */
+
+  }

@@ -1,0 +1,30 @@
+#titulo {
+    --tex-color:#E6E6FA;
+    font-size: 250%;
+    font-family: "Titillium Web", "sans-serif";
+    text-align:justify;
+
+}
+
+body {
+    --main-color: #008B8B;
+    color:#F5F5F5;
+    font-size: 150%;
+    font-family: "Titillium Web", "sans-serif";
+    text-align:justify;
+    background-color:#1d2631;
+    
+
+  }
+#b1 {
+    color:#F5F5F5;
+}
+
+a:visited {
+    color: unset; /* Remove a cor do link visitado */
+    text-decoration: none; /* Remove o sublinhado no link visitado */
+}
+
+.bx.bxl-flutter {
+    color: #008B8B; /* Define a cor do ícone */
+}

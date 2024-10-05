@@ -1,0 +1,285 @@
+/* Define que todas as tags do HTML terão margin, padding e box-sizing zerados por padrão,
+além de utilizar a fonte 'Titilium Web' e remover decoração de texto e listagem */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Titilium Web', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    }
+    
+    /* Define as variáveis para as cores, fontes e outras propriedades do site*/
+    :root{
+    --bg-color:var(--bg-color) #1d2631; /*cor de fundo*/
+    --tex-color: #fff; /*cor do texto */
+    --main-color: #34e7f8; /* cor principal do site */
+    --other-color: #fcfcfc; /* outra cor utilizada no site */
+    --h1-font: 4rem; /* tamanho da fonte do título principal */
+    --p-font: 1rem; /* tamanho da fonte dos textos */
+    }
+    
+    /* Define o estilo do corpo do site*/
+    body{
+    background-color:#1d2631 ; /* cor de fundo */
+    color: var(--tex-color); /* cor do texto */
+    }
+    
+    /* Define o estilo do cabeçalho fixo do site */
+    header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 8%;
+    }
+    
+    /* Define o estilo do logo do site */
+    .logo{
+    display: flex;
+    align-items: center;
+    color: var(--tex-color); /*cor do texto */
+    font-size: 28px;
+    font-weight: bold;
+    }
+    
+    /* Define o estilo do ícone do logo */
+    .logo i{
+    color: var(--main-color); /* cor principal do site */
+    font-size: 32px;
+    margin-right: 5px;
+    }
+    
+    /* Define o estilo da navegação do site */
+    .navegação{
+    display: flex;
+    }
+    
+    /* Define o estilo dos links da navegação */
+    .navegação a{
+    color: var(--other-color); /*outra cor utilizada no site */
+    font-size: var(--p-font); /* tamanho da fonte dos textos */
+    font-weight: 500;
+    margin: 0 30px;
+    transition: a .55s ease;
+    }
+    
+    /* Define o estilo dos links da navegação ao passar o mouse sobre eles*/
+    .navegação a:hover{
+    color: var(--main-color); /*cor principal do site */
+    }
+    
+    /* Define o estilo dos ícones do cabeçalho */
+    .header-icons{
+    display: flex;
+    align-items: center;
+    }
+    
+    /* Define o estilo do ícone do menu*/
+    #menu{
+    font-size: 35px;
+    color: var(--tex-color); /*cor do texto */
+    z-index: 10001;
+    cursor: pointer;
+    }
+    
+    /* Define o estilo dos ícones do cabeçalho */
+    .header-icons i{
+    margin-right: 25px;
+    font-size: 28px;
+    cursor: pointer;
+    transition: all .5s ease;
+    }
+    
+    /* Define o estilo dos ícones do cabeçalho ao passar o mouse sobre eles*/
+    .header-icons i:hover{
+    transform: translateY(-5px);
+    color: var(--main-color); /*cor principal do site */
+    }
+
+/* Define o estilo da seção, incluindo o preenchimento nas laterais */
+.section{
+    padding: 0 15%;
+    }
+    
+    /* Define o estilo da seção inicial da página, incluindo a posição, altura, largura, exibição em grid e espaçamento entre colunas */
+    .home{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+    }
+    
+    /* Define o estilo do título principal da seção inicial, incluindo tamanho da fonte, altura da linha e margem inferior */
+    .home-text h1{
+    font-size: var(--h1-font);
+    line-height: 1.2;
+    margin-bottom: 2px;
+    }
+    
+    /* Define o estilo do subtitulo da seção inicial, incluindo cor do texto, tamanho da fonte, peso da fonte e margem inferior */
+    .home-text h5{
+    color: #ffffff99;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 60px;
+    }
+    
+    /* Define o estilo do subtítulo da seção inicial, incluindo tamanho da fonte, peso da fonte, espaçamento entre caracteres e margem inferior */
+    .home-text h3{
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 60px;
+    }
+    
+    /* Define o estilo da imagem da seção inicial, incluindo largura máxima, largura, altura, margem esquerda */
+    .home-img img{
+    max-width: 75%;
+    width: 28rem;
+    height: auto;
+    margin-left: 25%;
+    }
+    
+    /* Define o estilo do botão de envio, incluindo cor de fundo, cor do texto, borda, borda arredondada, preenchimento, tamanho da fonte e cursor */
+    input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    }
+    
+    /* Define o estilo do botão de resetar, incluindo cor de fundo, cor do texto, borda, borda arredondada, preenchimento, tamanho da fonte e cursor */
+    input[type="reset"] {
+    background-color: #f10101;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    }
+    
+    /* Define o estilo da etiqueta de entrada, incluindo tamanho da fonte, cor do texto, exibição de bloco e margem inferior */
+    label {
+    font-size: 16px;
+    color: #fff;
+    display: block;
+    margin-bottom: 10px;
+    }
+    
+    /* Define o estilo da mensagem de erro, incluindo cor do texto, exibição de bloco e margem superior */
+    .error {
+    color: red;
+    display: block;
+    margin-top: 5px;
+    }
+    
+    /* Define o estilo da caixa sombreada, incluindo a sombra da caixa */
+    .box-shadow {
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 1.2);
+    }
+
+
+  
+
+  /* Define as configurações básicas de margem, padding e box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Define a fonte padrão e o tamanho para todo o corpo da página */
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+  }
+  
+  /* Define as configurações do container que envolve o formulário */
+  .container {
+    display: flex; /* Usa Flexbox para centralizar o conteúdo */
+    justify-content: center; /* Centraliza horizontalmente o conteúdo */
+    align-items: center; /* Centraliza verticalmente o conteúdo */
+    height: 100vh; /* Define a altura do container como 100% da viewport */
+  }
+  
+  /* Define as configurações do formulário */
+  form {
+    border: 2px solid #333; /* Define uma borda para o formulário */
+    padding: 20px; /* Define um espaçamento interno para o formulário */
+    max-width: 500px; /* Define a largura máxima do formulário */
+    width: 100%; /* Define a largura do formulário como 100% do container */
+  }
+  
+  /* Define as configurações do título do formulário */
+  form h2 {
+    font-size: 24px; /* Define o tamanho da fonte do título */
+    margin-bottom: 20px; /* Define um espaçamento inferior para o título */
+  }
+  
+  /* Define as configurações das labels do formulário */
+  form label {
+    display: block; /* Define que as labels são elementos block */
+    margin-bottom: 10px; /* Define um espaçamento inferior para as labels */
+  }
+  
+  /* Define as configurações dos campos de texto e textarea do formulário */
+  form input,
+  form textarea {
+    width: 100%; /* Define a largura dos campos como 100% do formulário */
+    padding: 10px; /* Define um espaçamento interno para os campos */
+    margin-bottom: 20px; /* Define um espaçamento inferior para os campos */
+    border: 1px solid #ccc; /* Define uma borda para os campos */
+  }
+  
+
+/* Define as propriedades CSS para o elemento com classe 'form' */
+.form {
+    position: absolute; /* Define a posição como absoluta */
+    top: 50%; /* Define a posição vertical como 50% em relação ao elemento pai */
+    left: 50%; /* Define a posição horizontal como 50% em relação ao elemento pai */
+    transform: translate(-50%, -50%); /* Usa a propriedade 'transform' para centralizar o elemento. Move o elemento -50% em relação à sua largura e -50% em relação à sua altura, resultando em uma centralização precisa do elemento */
+  }
+  
+  /* Define as propriedades CSS para o elemento body */
+body {
+    background-image: url('/Imagem/fundodocontato.jpg'); /* Define a imagem de fundo do corpo da página */
+    background-size: cover; /* Define a imagem de fundo para cobrir toda a área disponível */
+    background-position: center center; /* Define a posição centralizada da imagem de fundo */
+    background-repeat: no-repeat; /* Impede a repetição da imagem de fundo */
+   
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px; /* Defina a altura desejada para o rodapé */
+  }
+
+.cabec {
+    text-align: center; /* Centraliza o texto horizontalmente */
+    margin-bottom: 20px; /* Adiciona uma margem inferior para separar o texto do formulário */
+}
+
+.cabec {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px #000;
+    
+    padding-bottom: 10px;
+    margin-top: 50px;
+  }
